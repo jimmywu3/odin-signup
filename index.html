@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="javascript.js" defer></script>
     <title>Odin Sign-up</title>
+    
 </head>
 <body>
     <section class="display">
@@ -13,17 +14,65 @@
         <div class="title-box">
             <h1 class="title">Title</h1>
         </div>
+        <p class="credit">Photo by <a href="https://unsplash.com/@francesco_liotti" target="_blank">Francesco Liotti</a> on <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
     </section>
     <section class="signUp"> <!-- Might be better to split header, main, and footer into seperate sections -->
-        <h2>hi</h2>
-        <h2>Hello</h2>
-        <form>
-            <section class="form">
 
-            </section>
-            <button>Create Account</button>
-        </form>
-        <p>Already have an account? <a href="">Log in</a></p>
+        <div class="header">
+            <h2>This is not a real online service! Yapitity yap yap yap yap yap nyan nya nya</h2>
+            <h2>You <em>know</em> you want to.</h2>
+        </div>
+
+        <div class="main">
+            <form>
+                <section class="form">
+                    <h2>Let's do this!</h2>
+                    <div class="inputs">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="John" required>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Doe" required>
+                    </div>
+
+                    <div class="box"></div>
+
+                    <div class="inputs">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="myEmail@gmail.com" required>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="tel" name="number" id="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                    </div>
+
+                    <div class="box"></div>
+
+                    <div class="inputs">
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" name="pass" id="pass" required>
+                        <p id="match">* Passwords do not match</p>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm" id="confirm" required>
+                    </div>
+
+                    <div class="box"></div>
+
+                </section>
+                <button>Create Account</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+
     </section>
 </body>
 </html>
